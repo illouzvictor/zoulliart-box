@@ -11,7 +11,7 @@
 body{background:var(--dark);color:var(--text);font-family:"Cormorant Garamond",serif;min-height:100dvh;overflow-x:hidden;position:relative;}
 body::before{content:"";position:fixed;inset:0;z-index:0;background:radial-gradient(ellipse 120% 60% at 50% -10%,rgba(201,162,39,.12) 0%,transparent 60%),radial-gradient(ellipse 80% 40% at 20% 100%,rgba(100,60,10,.15) 0%,transparent 50%);pointer-events:none;}
 body::after{content:"";position:fixed;inset:0;z-index:1;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='.04'/%3E%3C/svg%3E");pointer-events:none;mix-blend-mode:overlay;}
-.screen{position:fixed;inset:0;z-index:10;display:flex;flex-direction:column;align-items:center;justify-content:safe center;padding:20px;overflow-y:auto;opacity:0;pointer-events:none;transition:opacity .7s ease;}
+.screen{position:fixed;inset:0;z-index:10;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;overflow-y:auto;opacity:0;pointer-events:none;transition:opacity .7s ease;}
 .screen.active{opacity:1;pointer-events:all;}
 .header{text-align:center;margin-bottom:clamp(14px,3.5vw,24px);}
 .collab-line{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:4px;}
@@ -97,7 +97,7 @@ input:focus{border-color:var(--gold);box-shadow:0 0 0 1px rgba(201,162,39,.15);}
   <div class="header fu"><div class="collab-line"><span class="collab-text">LES DIEUX ONT CRAQUE POUR BABOLEX</span></div><div class="main-title">ZOULLI ART x BABOLEX</div></div>
   <div class="err-title">Puce invalide</div><div class="err-body">Ce lien ne correspond a aucune Mystery Box. Contactez votre revendeur.</div>
 </div>
-<div class="screen" id="screen-email">
+<div class="screen" id="screen-email" style="justify-content:flex-start;padding-top:clamp(20px,5vh,40px);">
   <div class="header fu"><div class="collab-line"><span class="collab-text">LES DIEUX ONT CRAQUE POUR BABOLEX</span></div><div class="main-title">ZOULLI ART x BABOLEX</div><div class="crown">&#128081;</div><div class="subtitle">Edition Limitee &mdash; Mystery Box</div></div>
   <div class="card fu1">
     <div class="card-eyebrow">Revelation exclusive</div>
